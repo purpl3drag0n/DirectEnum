@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import xlwt 
 from xlwt import Workbook
 import pandas as pd
@@ -17,15 +18,15 @@ print(" (|   \ o                    / (_)                          ")
 print("  |    |    ,_    _   __ _|_ \__   _  _           _  _  _   ")
 print(" _|    ||  /  |  |/  /    |  /    / |/ |  |   |  / |/ |/ |  ")
 print("(/\___/ |_/   |_/|__/\___/|_/\___/  |  |_/ \_/|_/  |  |  |_/\n\n")
-print("purpl3drag0n: Use program at your own risk. I am not responsible for it's misuse.")
+print("purpl3drag0n: Use the program at your own risk. I am not responsible for it's misuse.")
 
 
 parser = argparse.ArgumentParser(description="Quickly enumerate subdomains")
-parser.add_argument("-f",help="Excel file to read subdomains from (must have 'dirs' in row 1 column A) Don't add .xlsx on command line",dest="sheetname",type=str, required=True)
-parser.add_argument("-u",help="Website enumeration will be done on",dest="baseweb",type=str, required=True)
-parser.add_argument("-d",help="Delay in between requests in seconds (default is 10)",dest="delay",type=int, required=False)
-parser.add_argument("-https",help="Use https (http by default)", dest="https", action="store_true",required=False)
-parser.add_argument("-s",help="Save subdomains and response codes (saves in .xls file)",dest="save",action="store_true", required=False)
+parser.add_argument("-f",help="Excel file to read subdomains from. (must have 'dirs' in row 1 column A) Don't add .xlsx on command line",dest="sheetname",type=str, required=True)
+parser.add_argument("-u",help="Website enumeration will be done on.",dest="baseweb",type=str, required=True)
+parser.add_argument("-d",help="Delay in between requests in seconds. (default is 10)",dest="delay",type=int, required=False)
+parser.add_argument("-https",help="Use https. (http by default)", dest="https", action="store_true",required=False)
+parser.add_argument("-s",help="Save subdomains and response codes. (saves in .xls file)",dest="save",action="store_true", required=False)
 args=parser.parse_args()
 
 if args.https == True:
