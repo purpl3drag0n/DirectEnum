@@ -25,3 +25,7 @@ optional arguments:
   
   Ex:
   python DirectEnum.py -u google.com -f subdomains -d 1 -https -s
+
+
+
+Raw version of this file looks much better.
