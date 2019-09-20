@@ -8,10 +8,6 @@ A simple python script that sends GET requests to a domain from a list.
  _|    ||  /  |  |/  /    |  /    / |/ |  |   |  / |/ |/ |
 (/\___/ |_/   |_/|__/\___/|_/\___/  |  |_/ \_/|_/  |  |  |_/
 
-
-purpl3drag0n: Use the program at your own risk. I am not responsible for it's misuse.
-usage: DirectEnum.py [-h] -f SHEETNAME -u BASEWEB [-d DELAY] [-https] [-s]
-
 Quickly enumerate subdomains
 
 optional arguments:
